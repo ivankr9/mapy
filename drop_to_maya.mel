@@ -1,0 +1,2 @@
+python("import sys;sys.path.append('PATH_TO_MAPY/mapy');import mapy; import pymel.core as pm;MainMayaWindow = pm.language.melGlobals['gMainWindow']; customMenu = pm.menu('MAPY', parent=MainMayaWindow); pm.menuItem(label='MAPY_UI', command='reload(mapy);mapy.mapy_initUI()', parent=customMenu)");
+python("reload(mapy);mapy.mapy_initUI()");
